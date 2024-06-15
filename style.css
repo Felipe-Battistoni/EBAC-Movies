@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #161616;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.d-flex .btn {
+    border-color: #ff0000;
+    color: #ff0000;
+}
+
+.d-flex .btn:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.card-img-overlay {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), black);
+    width: 100%;
+}
+
+.carousel-caption {
+    z-index: 1;
+}
+
+.carousel-item h3 {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.carousel-item .btn-left {
+    background-color: red;
+    width: 120px;
+    border: 1px solid #fff;
+}
+
+.carousel-item .btn-right {
+    background-color: rgba(255, 0, 0, 0);
+    width: 120px;
+    border: 1px solid #fff;
+}
+
+.carousel-item .btn{
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.carousel-item .btn-left:hover {
+    background-color: rgb(219, 62, 62);
+}
+
+.carousel-item .btn-right:hover {
+    background-color: rgb(27, 27, 27);
+}
+
+.carousel-item .btn-gap a {
+    margin: 0 2px 0 2px;
+}
+
+/*----- FILMES -----*/
+
+.nav {
+    padding-top: 50px;
+}
+
+.tab-content {
+    padding-top: 15px;
+    padding-bottom: 55px;
+}
+
+.card {
+    margin: 8px;
+    overflow: hidden;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+    transition: transform .50s;
+}
+
+.card-body .btn-left {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ff0000;
+    background-color: rgba(255, 0, 0, 0);
+    width: 100px;
+    border: 1px solid red;
+    text-transform: uppercase;
+}
+
+.card-body .btn-right {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(27, 27, 27);
+    background-color: rgba(255, 0, 0, 0);
+    width: 100px;
+    border: 1px solid rgb(27, 27, 27);
+    text-transform: uppercase;
+}
+
+.card-body .btn-left:hover {
+    color: #fff;
+    background-color: rgb(219, 62, 62);
+    border: 1px solid rgb(219, 62, 62);
+}
+
+.card-body .btn-right:hover {
+    color: #fff;
+    background-color: rgb(27, 27, 27);
+}
+
+.card-body .btn-plus {
+    border: none;
+    background-color: rgb(27, 27, 27);
+}
+
+.card-body .btn-plus:hover {
+    background-color: #3f3f3f;
+}
+
+.modal .btn-modal .btn{
+    color: #fff;
+    background-color: red;
+    border: 1px solid #fff;
+}
+
+.modal .btn-modal .btn:hover {
+    color: #fff;
+    background-color: rgb(219, 62, 62);
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1023px) {
+    .tab-content .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

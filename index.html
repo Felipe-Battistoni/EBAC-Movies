@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>EBAC Movies</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" width="150px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Início</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Comprar
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Filmes</a></li>
+                <li><a class="dropdown-item" href="#">Séries</a></li>
+                <li><a class="dropdown-item" href="#">Infantil</a></li>
+
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Outros</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Alugar
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Filmes</a></li>
+                <li><a class="dropdown-item" href="#">Séries</a></li>
+                <li><a class="dropdown-item" href="#">Infantil</a></li>
+
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Outros</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Digite aqui..." aria-label="Search">
+            <button class="btn btn-outline-danger" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div id="meuCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/super-mario.jpg" class="d-block w-100" alt="Super Mario">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Super Mario Bros. O Filme</h3>
+            <p>Mario e seu irmão Luigi são encanadores do Brooklyn, em Nova York. Um dia, eles vão parar no reino dos
+              cogumelos, governado pela Princesa Peach. O local é ameaçado por Bowser, rei dos Koopas, que faz de tudo
+              para conseguir reinar em todos os lugares.</p>
+            <div class="btn-gap">
+              <a class="btn btn-primary btn-left" href="#" role="button">Comprar</a>
+              <a class="btn btn-primary btn-right" href="#" role="button">Alugar</a>
+            </div>
+          </div>
+          <div class="card-img-overlay"></div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/friends.jpg" class="d-block w-100" alt="Friends">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 class="h3">Friends</h3>
+            <p>Seis jovens são unidos por laços familiares, românticos e, principalmente, de amizade, enquanto tentam
+              vingar em Nova York. Rachel é a garota mimada que deixa o noivo no altar para viver com a amiga dos tempos
+              de escola Monica, sistemática e apaixonada pela culinária. Monica é irmã de Ross, um paleontólogo que é
+              abandonado pela esposa, que descobriu ser lésbica. Do outro lado do corredor do apartamento de Monica e
+              Rachel, moram Joey, um ator frustrado, e Chandler, de profissão misteriosa. A turma é completa pela
+              exótica Phoebe. </p>
+            <div class="btn-gap">
+              <a class="btn btn-primary btn-left" href="#" role="button">Comprar</a>
+              <a class="btn btn-primary btn-right" href="#" role="button">Alugar</a>
+            </div>
+          </div>
+          <div class="card-img-overlay"></div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/duna.jpg" class="d-block w-100" alt="Duna">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Duna 2</h3>
+            <p>Paul Atreides se une a Chani e aos Fremen enquanto busca vingança contra os conspiradores que destruíram
+              sua família. Enfrentando uma escolha entre o amor de sua vida e o destino do universo, ele deve evitar um
+              futuro terrível que só ele pode prever.</p>
+            <div class="btn-gap">
+              <a class="btn btn-primary btn-left" href="#" role="button">Comprar</a>
+              <a class="btn btn-primary btn-right" href="#" role="button">Alugar</a>
+            </div>
+          </div>
+          <div class="card-img-overlay"></div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#meuCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#meuCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+  </div><!--container-->
+
+  <div class="container">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+          role="tab" aria-controls="home-tab-pane" aria-selected="true">Filmes</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+          role="tab" aria-controls="profile-tab-pane" aria-selected="false">Séries</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="infantil-tab" data-bs-toggle="tab" data-bs-target="#infantil-tab-pane"
+          type="button" role="tab" aria-controls="infantil-tab-pane" aria-selected="false">Infantil</button>
+      </li>
+    </ul>
+  </div>
+
+  <!--INICIO FILMES-->
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 24rem;">
+              <img src="img/o-duble.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">O Dublê</h5>
+                <p class="card-text">O dublê Colt Seavers volta à ação quando uma estrela de cinema desaparece de repente. À medida que o mistério se aprofunda, Colt...</p>
+                <div class="btn-cards">
+                  <a href="#" class="btn btn-primary btn-left">Comprar</a>
+                  <a href="#" class="btn btn-primary btn-right">Alugar</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-plus" data-bs-toggle="modal" data-bs-target="#filme-1">
+                    <img src="img/more.png" alt="" width="20px">
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="filme-1" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">O Dublê</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-movie">
+                          <iframe width="480" height="260" src="https://www.youtube.com/embed/FyVosS3MPqk?si=yfV9ewgjxP_uOB_G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-body">
+                          O dublê Colt Seavers volta à ação quando uma estrela de cinema desaparece de repente. À medida que o mistério se aprofunda, Colt se envolve em uma trama sinistra que o leva à beira de uma queda mais perigosa do que qualquer uma de suas acrobacias.
+                        </div>
+                        <div class="modal-footer btn-cards">
+                          <a href="#" class="btn btn-left">Comprar</a>
+                          <a href="#" class="btn btn-right">Alugar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--FILME 2-->
+          <div class="col">
+            <div class="card" style="width: 24rem;">
+              <img src="img/duna.jpg" class="card-img-top" alt="Batman">
+              <div class="card-body">
+                <h5 class="card-title">Duna 2</h5>
+                <p class="card-text">Paul Atreides se une a Chani e aos Fremen enquanto busca vingança contra os conspiradores que destruíram sua família...</p>
+                <div class="btn-cards">
+                  <a href="#" class="btn btn-primary btn-left">Comprar</a>
+                  <a href="#" class="btn btn-primary btn-right">Alugar</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-plus" data-bs-toggle="modal" data-bs-target="#filme-2">
+                    <img src="img/more.png" alt="" width="20px">
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="filme-2" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">Duna 2</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-movie">
+                          <iframe width="480" height="260" src="https://www.youtube.com/embed/QqmbrvluQRA?si=Li9ocUeyfcdRFpLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-body">
+                          Paul Atreides se une a Chani e aos Fremen enquanto busca vingança contra os conspiradores que destruíram sua família. Enfrentando uma escolha entre o amor de sua vida e o destino do universo, ele deve evitar um futuro terrível que só ele pode prever.
+                        </div>
+                        <div class="modal-footer btn-cards">
+                          <a href="#" class="btn btn-left">Comprar</a>
+                          <a href="#" class="btn btn-right">Alugar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--FILME 3-->
+          <div class="col">
+            <div class="card" style="width: 24rem;">
+              <img src="img/caça-fantasmas.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Ghostbusters: Apocalipse de Gelo</h5>
+                <p class="card-text">A família Spengler retorna ao icônico quartel de Nova York, onde os Caça-Fantasmas originais atuaram em seus anos de glória...</p>
+                <div class="btn-cards">
+                  <a href="#" class="btn btn-primary btn-left">Comprar</a>
+                  <a href="#" class="btn btn-primary btn-right">Alugar</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-plus" data-bs-toggle="modal" data-bs-target="#filme-3">
+                    <img src="img/more.png" alt="" width="20px">
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="filme-3" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">Ghostbusters: Apocalipse de Gelo</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-movie">
+                          <iframe width="480" height="260" src="https://www.youtube.com/embed/pjzOZCXs0oo?si=TZ_xnlq9_o1uMBVt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-body">
+                          A família Spengler retorna ao icônico quartel de Nova York, onde os Caça-Fantasmas originais atuaram em seus anos de glória. Quando a descoberta de um artefato antigo desencadeia uma força maligna, novos e antigos Caça-Fantasmas precisam se unir para proteger seu lar e salvar o mundo de uma segunda era glacial.
+                        </div>
+                        <div class="modal-footer btn-cards">
+                          <a href="#" class="btn btn-left">Comprar</a>
+                          <a href="#" class="btn btn-right">Alugar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--FILME 4-->
+          <div class="col">
+            <div class="card" style="width: 24rem;">
+              <img src="img/godzilla-vs-kong.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Godzilla e Kong: O Novo Império</h5>
+                <p class="card-text">Godzilla e o todo-poderoso Kong enfrentam uma ameaça colossal escondida nas profundezas do planeta, desafiando a sua própria existência...</p>
+                <div class="btn-cards">
+                  <a href="#" class="btn btn-primary btn-left">Comprar</a>
+                  <a href="#" class="btn btn-primary btn-right">Alugar</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-plus" data-bs-toggle="modal" data-bs-target="#filme-4">
+                    <img src="img/more.png" alt="" width="20px">
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="filme-4" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">Godzilla e Kong: O Novo Império</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-movie">
+                          <iframe width="480" height="260" src="https://www.youtube.com/embed/LOIMD084NlE?si=ROlOiDKh4IXyFfG3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-body">
+                          Godzilla e o todo-poderoso Kong enfrentam uma ameaça colossal escondida nas profundezas do planeta, desafiando a sua própria existência e a sobrevivência da raça humana.
+                        </div>
+                        <div class="modal-footer btn-cards">
+                          <a href="#" class="btn btn-left">Comprar</a>
+                          <a href="#" class="btn btn-right">Alugar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--FILME 5-->
+          <div class="col">
+            <div class="card" style="width: 24rem;">
+              <img src="img/planeta-dos-macacos.jpg" class="card-img-top" alt="Batman">
+              <div class="card-body">
+                <h5 class="card-title">Planeta dos Macacos: O Reinado</h5>
+                <p class="card-text">Muitas sociedades de macacos cresceram desde quando César levou seu povo a um oásis, enquanto os humanos foram reduzidos...</p>
+                <div class="btn-cards">
+                  <a href="#" class="btn btn-primary btn-left">Comprar</a>
+                  <a href="#" class="btn btn-primary btn-right">Alugar</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-plus" data-bs-toggle="modal" data-bs-target="#filme-5">
+                    <img src="img/more.png" alt="" width="20px">
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="filme-5" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">Planeta dos Macacos: O Reinado</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-movie">
+                          <iframe width="480" height="260" src="https://www.youtube.com/embed/NmTPDA15lPA?si=gBxbYafNxMitSEXS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-body">
+                          Muitas sociedades de macacos cresceram desde quando César levou seu povo a um oásis, enquanto os humanos foram reduzidos a sobreviver e se esconder nas sombras. Um líder macaco começa a escravizar outros grupos para encontrar tecnologia humana, enquanto um jovem macaco, que viu seu clã ser capturado, embarca em uma viagem para encontrar a liberdade, sendo uma jovem humana a chave para todos.
+                        </div>
+                        <div class="modal-footer btn-cards">
+                          <a href="#" class="btn btn-left">Comprar</a>
+                          <a href="#" class="btn btn-right">Alugar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--FILME 6-->
+          <div class="col">
+            <div class="card" style="width: 24rem;">
+              <img src="img/furiosa.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Furiosa: A Mad Max Saga</h5>
+                <p class="card-text">A jovem Furiosa cai nas mãos de uma grande horda de motoqueiros liderada pelo senhor da guerra Dementus. Varrendo Wasteland...</p>
+                <div class="btn-cards">
+                  <a href="#" class="btn btn-primary btn-left">Comprar</a>
+                  <a href="#" class="btn btn-primary btn-right">Alugar</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-plus" data-bs-toggle="modal" data-bs-target="#filme-6">
+                    <img src="img/more.png" alt="" width="20px">
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="filme-6" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">Furiosa: A Mad Max Saga</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-movie">
+                          <iframe width="480" height="260" src="https://www.youtube.com/embed/0qhJk_anEjM?si=El1aCZM8ruhe10Bq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-body">
+                          A jovem Furiosa cai nas mãos de uma grande horda de motoqueiros liderada pelo senhor da guerra Dementus. Varrendo Wasteland, eles encontram a Cidadela, presidida pelo Immortan Joe. Enquanto os dois tiranos lutam pelo domínio, Furiosa logo se vê em uma batalha ininterrupta para voltar para casa.
+                        </div>
+                        <div class="modal-footer btn-cards">
+                          <a href="#" class="btn btn-left">Comprar</a>
+                          <a href="#" class="btn btn-right">Alugar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--FILMES-->
+
+    <!--SERIE 1-->
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 24rem;">
+              <img src="img/friends.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Friends</h5>
+                <p class="card-text">Seis jovens são unidos por laços familiares, românticos e, principalmente, de
+                  amizade, enquanto tentam vingar em Nova York...</p>
+                <div class="btn-cards">
+                  <a href="#" class="btn btn-primary btn-left">Comprar</a>
+                  <a href="#" class="btn btn-primary btn-right">Alugar</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-plus" data-bs-toggle="modal" data-bs-target="#serie-1">
+                    <img src="img/more.png" alt="" width="20px">
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="serie-1" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">Friends</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-movie">
+                          <iframe width="480" height="260" src="https://www.youtube.com/embed/IEEbUzffzrk?si=NgVg1paAK-INTIMz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-body">
+                          Seis jovens são unidos por laços familiares, românticos e, principalmente, de amizade, enquanto tentam vingar em Nova York. Rachel é a garota mimada que deixa o noivo no altar para viver com a amiga dos tempos de escola Monica, sistemática e apaixonada pela culinária. Monica é irmã de Ross, um paleontólogo que é abandonado pela esposa, que descobriu ser lésbica. Do outro lado do corredor do apartamento de Monica e Rachel, moram Joey, um ator frustrado, e Chandler, de profissão misteriosa. A turma é completa pela exótica Phoebe. 
+                        </div>
+                        <div class="modal-footer btn-cards">
+                          <a href="#" class="btn btn-left">Comprar</a>
+                          <a href="#" class="btn btn-right">Alugar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--SERIE 2-->
+          <div class="col">
+            <div class="card" style="width: 24rem;">
+              <img src="img/himym.jpg" class="card-img-top" alt="Batman">
+              <div class="card-body">
+                <h5 class="card-title">How I Met Your Mother</h5>
+                <p class="card-text">A história é sobre Ted (Josh Radnor) contando aos seus dois filhos como conheceu a mãe deles. HIMYM é uma história muito bem...</p>
+                <div class="btn-cards">
+                  <a href="#" class="btn btn-primary btn-left">Comprar</a>
+                  <a href="#" class="btn btn-primary btn-right">Alugar</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-plus" data-bs-toggle="modal" data-bs-target="#serie-2">
+                    <img src="img/more.png" alt="" width="20px">
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="serie-2" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">How I Met Your Mother</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-movie">
+                          <iframe width="480" height="260" src="https://www.youtube.com/embed/YdJRr01Y5SY?si=NbvfRcnUdL0q9Svp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-body">
+                          A história é sobre Ted (Josh Radnor) contando aos seus dois filhos como conheceu a mãe deles. HIMYM é uma história muito bem contada e com excelentes atores. A série é cheia de mistérios e imprevistos para o telespectador, o que torna ela muito mais viciante a cada temporada.
+                        </div>
+                        <div class="modal-footer btn-cards">
+                          <a href="#" class="btn btn-left">Comprar</a>
+                          <a href="#" class="btn btn-right">Alugar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--SERIE 3-->
+          <div class="col">
+            <div class="card" style="width: 24rem;">
+              <img src="img/the-big-bang.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Big Bang: Theory</h5>
+                <p class="card-text">Dois jovens gênios da física, Leonard (Johnny Galecki) e Sheldon Cooper (Jim Parsons), dividem um apartamento e são...</p>
+                <div class="btn-cards">
+                  <a href="#" class="btn btn-primary btn-left">Comprar</a>
+                  <a href="#" class="btn btn-primary btn-right">Alugar</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-plus" data-bs-toggle="modal" data-bs-target="#serie-3">
+                    <img src="img/more.png" alt="" width="20px">
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="serie-3" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">The Big Bang: Theory</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-movie">
+                          <iframe width="480" height="260" src="https://www.youtube.com/embed/PpKdAxc0pn4?si=UFBGCq_nFkFRpWL3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-body">
+                          Dois jovens gênios da física, Leonard (Johnny Galecki) e Sheldon Cooper (Jim Parsons), dividem um apartamento e são surpreendidos ao descobrir que a vizinha, Penny (Kaley Cuoco), é uma loira não tão inteligente. Leonard acredita que pode conquistar a jovem.
+                        </div>
+                        <div class="modal-footer btn-cards">
+                          <a href="#" class="btn btn-left">Comprar</a>
+                          <a href="#" class="btn btn-right">Alugar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--SERIE 4-->
+          <div class="col">
+            <div class="card" style="width: 24rem;">
+              <img src="img/the-office.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Office</h5>
+                <p class="card-text">O iludido chefe Michael procura conduzir seus funcionários insatisfeitos na empresa de papel Dunder Mifflin em meio a incessantes...</p>
+                <div class="btn-cards">
+                  <a href="#" class="btn btn-primary btn-left">Comprar</a>
+                  <a href="#" class="btn btn-primary btn-right">Alugar</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-plus" data-bs-toggle="modal" data-bs-target="#serie-4">
+                    <img src="img/more.png" alt="" width="20px">
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="serie-4" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">The Office</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-movie">
+                          <iframe width="480" height="260" src="https://www.youtube.com/embed/tNcDHWpselE?si=It0mzEx6U9XMWsxo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-body">
+                          O iludido chefe Michael procura conduzir seus funcionários insatisfeitos na empresa de papel Dunder Mifflin em meio a incessantes contratempos e idiossincrasias. Assista o quanto quiser. Vencedora do Emmy de Melhor Série Cômica em 2006, foi onde Steve Carell, Ed Helms e outros começaram.
+                        </div>
+                        <div class="modal-footer btn-cards">
+                          <a href="#" class="btn btn-left">Comprar</a>
+                          <a href="#" class="btn btn-right">Alugar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--SERIE 5-->
+          <div class="col">
+            <div class="card" style="width: 24rem;">
+              <img src="img/70-show.jpg" class="card-img-top" alt="Batman">
+              <div class="card-body">
+                <h5 class="card-title">That '70s Show</h5>
+                <p class="card-text">A série mostra acontecimentos dos anos 70, como feminismo, atitudes sexuais, conflitos de gerações, as dificuldades econômicas...</p>
+                <div class="btn-cards">
+                  <a href="#" class="btn btn-primary btn-left">Comprar</a>
+                  <a href="#" class="btn btn-primary btn-right">Alugar</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-plus" data-bs-toggle="modal" data-bs-target="#serie-5">
+                    <img src="img/more.png" alt="" width="20px">
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="serie-5" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">That '70s Show</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-movie">
+                          <iframe width="480" height="260" src="https://www.youtube.com/embed/b1za7d3KvHw?si=4ZaPUXTAokzqUbhL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-body">
+                          A série mostra acontecimentos dos anos 70, como feminismo, atitudes sexuais, conflitos de gerações, as dificuldades econômicas dos anos 70, a recessão e o uso de drogas. A série também destacou a evolução da indústria do entretenimento, incluindo a televisão, video game, revista Mad e a obsessão de Eric com Star Wars.
+                        </div>
+                        <div class="modal-footer btn-cards">
+                          <a href="#" class="btn btn-left">Comprar</a>
+                          <a href="#" class="btn btn-right">Alugar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--SERIE 6-->
+          <div class="col">
+            <div class="card" style="width: 24rem;">
+              <img src="img/seinfield.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Seinfield</h5>
+                <p class="card-text">A série Seinfeld, no ar entre os anos de 1989 a 1998, está disponível no catálogo da Netflix. A trama segue o cotidiano de um humorista...</p>
+                <div class="btn-cards">
+                  <a href="#" class="btn btn-primary btn-left">Comprar</a>
+                  <a href="#" class="btn btn-primary btn-right">Alugar</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-plus" data-bs-toggle="modal" data-bs-target="#serie-6">
+                    <img src="img/more.png" alt="" width="20px">
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="serie-6" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">Seinfield</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-movie">
+                          <iframe width="480" height="260" src="https://www.youtube.com/embed/hQXKyIG_NS4?si=rBvYb4U0XreU-zns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-body">
+                          A série Seinfeld, no ar entre os anos de 1989 a 1998, está disponível no catálogo da Netflix. A trama segue o cotidiano de um humorista que, ao lado dos amigos, vive inúmeras desventuras em Nova York. Exibida originalmente no canal NBC, a sitcom é uma criação de Larry David e Jerry Seinfeld, que protagoniza a comédia.
+                        </div>
+                        <div class="modal-footer btn-cards">
+                          <a href="#" class="btn btn-left">Comprar</a>
+                          <a href="#" class="btn btn-right">Alugar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--SÉRIES-->
+    <!--INFANTIL 1-->
+    <div class="tab-pane fade" id="infantil-tab-pane" role="tabpanel" aria-labelledby="infantil-tab" tabindex="0">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 24rem;">
+              <img src="img/super-mario.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Super Mario Bros. - O Filme</h5>
+                <p class="card-text">Mario e seu irmão Luigi são encanadores do Brooklyn, em Nova York. Um dia, eles vão parar no reino dos cogumelos, governado...</p>
+                <div class="btn-cards">
+                  <a href="#" class="btn btn-primary btn-left">Comprar</a>
+                  <a href="#" class="btn btn-primary btn-right">Alugar</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-plus" data-bs-toggle="modal" data-bs-target="#infantil-1">
+                    <img src="img/more.png" alt="" width="20px">
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="infantil-1" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">Super Mario Bros. - O Filme</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-movie">
+                          <iframe width="480" height="260" src="https://www.youtube.com/embed/Uh7I0lAeItk?si=tOCwMcQ1Bte33a4S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-body">
+                          Mario e seu irmão Luigi são encanadores do Brooklyn, em Nova York. Um dia, eles vão parar no reino dos cogumelos, governado pela Princesa Peach. O local é ameaçado por Bowser, rei dos Koopas, que faz de tudo para conseguir reinar em todos os lugares.
+                        </div>
+                        <div class="modal-footer btn-cards">
+                          <a href="#" class="btn btn-left">Comprar</a>
+                          <a href="#" class="btn btn-right">Alugar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--INFANTIL 2-->
+          <div class="col">
+            <div class="card" style="width: 24rem;">
+              <img src="img/frozen.jpg" class="card-img-top" alt="Batman">
+              <div class="card-body">
+                <h5 class="card-title">Frozen 2</h5>
+                <p class="card-text">De volta à infância de Elsa e Anna, as duas garotas descobrem uma história do pai, quando ainda era príncipe de Arendelle...</p>
+                <div class="btn-cards">
+                  <a href="#" class="btn btn-primary btn-left">Comprar</a>
+                  <a href="#" class="btn btn-primary btn-right">Alugar</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-plus" data-bs-toggle="modal" data-bs-target="#infantil-2">
+                    <img src="img/more.png" alt="" width="20px">
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="infantil-2" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">Frozen 2</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-movie">
+                          <iframe width="480" height="260" src="https://www.youtube.com/embed/Zi4LMpSDccc?si=BEYVlhIYPhhdesjv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-body">
+                          De volta à infância de Elsa e Anna, as duas garotas descobrem uma história do pai, quando ainda era príncipe de Arendelle. Ele conta às meninas a história de uma visita à floresta dos elementos, onde um acontecimento inesperado teria provocado a separação dos habitantes da cidade com os quatro elementos fundamentais: ar, fogo, terra e água. Esta revelação ajuda Elsa a compreender a origem de seus poderes.
+                        </div>
+                        <div class="modal-footer btn-cards">
+                          <a href="#" class="btn btn-left">Comprar</a>
+                          <a href="#" class="btn btn-right">Alugar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--INFANTIL 3-->
+          <div class="col">
+            <div class="card" style="width: 24rem;">
+              <img src="img/kung-fu-panda.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kung Fu Panda 4</h5>
+                <p class="card-text">Uma poderosa feiticeira que muda de forma coloca os olhos no Cajado da Sabedoria. Po de repente percebe que precisa de ajuda...</p>
+                <div class="btn-cards">
+                  <a href="#" class="btn btn-primary btn-left">Comprar</a>
+                  <a href="#" class="btn btn-primary btn-right">Alugar</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-plus" data-bs-toggle="modal" data-bs-target="#infantil-3">
+                    <img src="img/more.png" alt="" width="20px">
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="infantil-3" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">Kung Fu Panda 4</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-movie">
+                          <iframe width="480" height="260" src="https://www.youtube.com/embed/XnQF9sqgZLE?si=9d56G6RBloNKfiaO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-body">
+                          Uma poderosa feiticeira que muda de forma coloca os olhos no Cajado da Sabedoria. Po de repente percebe que precisa de ajuda e logo descobre que heróis podem ser encontrados nos lugares mais inesperados.
+                        </div>
+                        <div class="modal-footer btn-cards">
+                          <a href="#" class="btn btn-left">Comprar</a>
+                          <a href="#" class="btn btn-right">Alugar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--INFANTIL 4-->
+          <div class="col">
+            <div class="card" style="width: 24rem;">
+              <img src="img/pokemon.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pokémon: Horizontes</h5>
+                <p class="card-text">Uma nova aventura está começando dentro do vasto mundo de Pokémon! Chegando à Academia Índigo, uma garota...</p>
+                <div class="btn-cards">
+                  <a href="#" class="btn btn-primary btn-left">Comprar</a>
+                  <a href="#" class="btn btn-primary btn-right">Alugar</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-plus" data-bs-toggle="modal" data-bs-target="#infantil-4">
+                    <img src="img/more.png" alt="" width="20px">
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="infantil-4" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">Pokémon: Horizontes</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-movie">
+                          <iframe width="480" height="260" src="https://www.youtube.com/embed/zwNZ4Sj4YI0?si=4LYuSFE3yFmUA7dh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-body">
+                          Uma nova aventura está começando dentro do vasto mundo de Pokémon! Chegando à Academia Índigo, uma garota chamada Liko recebe seu primeiro parceiro Pokémon, Sprigatito. Mas ela logo se vê perseguida pelos Desbravadores, um grupo misterioso que está determinado a pegar o pingente do colar que ela usa.
+                        </div>
+                        <div class="modal-footer btn-cards">
+                          <a href="#" class="btn btn-left">Comprar</a>
+                          <a href="#" class="btn btn-right">Alugar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--INFANTIL 5-->
+          <div class="col">
+            <div class="card" style="width: 24rem;">
+              <img src="img/spider-man.jpg" class="card-img-top" alt="Batman">
+              <div class="card-body">
+                <h5 class="card-title">Homem-Aranha: Através do Aranhaverso</h5>
+                <p class="card-text">Depois de se reunir com Gwen Stacy, Homem-Aranha é jogado no multiverso...</p>
+                <div class="btn-cards">
+                  <a href="#" class="btn btn-primary btn-left">Comprar</a>
+                  <a href="#" class="btn btn-primary btn-right">Alugar</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-plus" data-bs-toggle="modal" data-bs-target="#infantil-5">
+                    <img src="img/more.png" alt="" width="20px">
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="infantil-5" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">Homem-Aranha: Através do Aranhaverso</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-movie">
+                          <iframe width="480" height="260" src="https://www.youtube.com/embed/ME0QiRVsmVI?si=r7uQDqff58bhheRO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-body">
+                          Depois de se reunir com Gwen Stacy, Homem-Aranha é jogado no multiverso. Lá, o super-herói aracnídeo encontra uma numerosa equipe encarregada de proteger sua própria existência.
+                        </div>
+                        <div class="modal-footer btn-cards">
+                          <a href="#" class="btn btn-left">Comprar</a>
+                          <a href="#" class="btn btn-right">Alugar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--INFANTIL 6-->
+          <div class="col">
+            <div class="card" style="width: 24rem;">
+              <img src="img/elementos.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Elementos</h5>
+                <p class="card-text">Em uma cidade onde os habitantes de fogo, água, terra e ar convivem, uma jovem mulher flamejante e um rapaz que vive seguindo...</p>
+                <div class="btn-cards">
+                  <a href="#" class="btn btn-primary btn-left">Comprar</a>
+                  <a href="#" class="btn btn-primary btn-right">Alugar</a>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary btn-plus" data-bs-toggle="modal" data-bs-target="#infantil-6">
+                    <img src="img/more.png" alt="" width="20px">
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="infantil-6" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="staticBackdropLabel">Elementos</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-movie">
+                          <iframe width="480" height="260" src="https://www.youtube.com/embed/BydjQP2aFd0?si=Ira2-FpuVjNVa1YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-body">
+                          Em uma cidade onde os habitantes de fogo, água, terra e ar convivem, uma jovem mulher flamejante e um rapaz que vive seguindo o fluxo descobrem algo surpreendente, porém elementar: o quanto eles têm em comum.
+                        </div>
+                        <div class="modal-footer btn-cards">
+                          <a href="#" class="btn btn-left">Comprar</a>
+                          <a href="#" class="btn btn-right">Alugar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--INFANTIL-->
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
